@@ -13,9 +13,14 @@
 		783F79C127FFE3E000C6959E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783F79BF27FFE3E000C6959E /* Main.storyboard */; };
 		783F79C327FFE3E800C6959E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783F79C227FFE3E800C6959E /* Assets.xcassets */; };
 		783F79C627FFE3E800C6959E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783F79C427FFE3E800C6959E /* LaunchScreen.storyboard */; };
-		783F79D127FFE48000C6959E /* SighnInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F79D027FFE48000C6959E /* SighnInViewController.swift */; };
+		783F79D127FFE48000C6959E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F79D027FFE48000C6959E /* SignInViewController.swift */; };
 		783F79D427FFEAEB00C6959E /* SignInXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F79D227FFEAEB00C6959E /* SignInXIBViewController.swift */; };
 		783F79D527FFEAEB00C6959E /* SignInXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783F79D327FFEAEB00C6959E /* SignInXIBViewController.xib */; };
+		789608A228009447000997B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789608A128009447000997B2 /* SignUpViewController.swift */; };
+		78A0345A2800A91300DBA604 /* SignUpXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A034582800A91300DBA604 /* SignUpXIBViewController.swift */; };
+		78A0345B2800A91300DBA604 /* SignUpXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A034592800A91300DBA604 /* SignUpXIBViewController.xib */; };
+		78A0345D280138AB00DBA604 /* HomePagwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345C280138AB00DBA604 /* HomePagwViewController.swift */; };
+		78A034602801393D00DBA604 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345F2801393D00DBA604 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +32,14 @@
 		783F79C227FFE3E800C6959E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		783F79C527FFE3E800C6959E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		783F79C727FFE3E800C6959E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		783F79D027FFE48000C6959E /* SighnInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighnInViewController.swift; sourceTree = "<group>"; };
+		783F79D027FFE48000C6959E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		783F79D227FFEAEB00C6959E /* SignInXIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInXIBViewController.swift; sourceTree = "<group>"; };
 		783F79D327FFEAEB00C6959E /* SignInXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInXIBViewController.xib; sourceTree = "<group>"; };
+		789608A128009447000997B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		78A034582800A91300DBA604 /* SignUpXIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpXIBViewController.swift; sourceTree = "<group>"; };
+		78A034592800A91300DBA604 /* SignUpXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpXIBViewController.xib; sourceTree = "<group>"; };
+		78A0345C280138AB00DBA604 /* HomePagwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagwViewController.swift; sourceTree = "<group>"; };
+		78A0345F2801393D00DBA604 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		783F79B827FFE3E000C6959E /* InstagramLoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				78A0345E2801391C00DBA604 /* objects */,
 				783F79B927FFE3E000C6959E /* AppDelegate.swift */,
 				783F79BB27FFE3E000C6959E /* SceneDelegate.swift */,
 				783F79C727FFE3E800C6959E /* Info.plist */,
@@ -75,7 +86,9 @@
 		783F79CD27FFE3EF00C6959E /* ControllersCode */ = {
 			isa = PBXGroup;
 			children = (
-				783F79D027FFE48000C6959E /* SighnInViewController.swift */,
+				783F79D027FFE48000C6959E /* SignInViewController.swift */,
+				789608A128009447000997B2 /* SignUpViewController.swift */,
+				78A0345C280138AB00DBA604 /* HomePagwViewController.swift */,
 			);
 			path = ControllersCode;
 			sourceTree = "<group>";
@@ -85,6 +98,8 @@
 			children = (
 				783F79D227FFEAEB00C6959E /* SignInXIBViewController.swift */,
 				783F79D327FFEAEB00C6959E /* SignInXIBViewController.xib */,
+				78A034582800A91300DBA604 /* SignUpXIBViewController.swift */,
+				78A034592800A91300DBA604 /* SignUpXIBViewController.xib */,
 			);
 			path = ControllersXIB;
 			sourceTree = "<group>";
@@ -98,6 +113,14 @@
 				783F79C427FFE3E800C6959E /* LaunchScreen.storyboard */,
 			);
 			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		78A0345E2801391C00DBA604 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				78A0345F2801393D00DBA604 /* User.swift */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +184,7 @@
 				783F79C627FFE3E800C6959E /* LaunchScreen.storyboard in Resources */,
 				783F79C327FFE3E800C6959E /* Assets.xcassets in Resources */,
 				783F79D527FFEAEB00C6959E /* SignInXIBViewController.xib in Resources */,
+				78A0345B2800A91300DBA604 /* SignUpXIBViewController.xib in Resources */,
 				783F79C127FFE3E000C6959E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,10 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789608A228009447000997B2 /* SignUpViewController.swift in Sources */,
 				783F79BE27FFE3E000C6959E /* ViewController.swift in Sources */,
 				783F79D427FFEAEB00C6959E /* SignInXIBViewController.swift in Sources */,
-				783F79D127FFE48000C6959E /* SighnInViewController.swift in Sources */,
+				78A0345A2800A91300DBA604 /* SignUpXIBViewController.swift in Sources */,
+				783F79D127FFE48000C6959E /* SignInViewController.swift in Sources */,
+				78A034602801393D00DBA604 /* User.swift in Sources */,
 				783F79BA27FFE3E000C6959E /* AppDelegate.swift in Sources */,
+				78A0345D280138AB00DBA604 /* HomePagwViewController.swift in Sources */,
 				783F79BC27FFE3E000C6959E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

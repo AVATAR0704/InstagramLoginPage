@@ -1,5 +1,5 @@
 //
-//  SighnInViewController.swift
+//  SignUpViewController.swift
 //  InstagramLoginPage
 //
 //  Created by Macservis on 08/04/22.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SighnInViewController: UIViewController {
-
+class SignUpViewController: UIViewController {
+    
     //MARK: UI elements
     
     let nmviewBig: UIView = {
@@ -18,7 +18,6 @@ class SighnInViewController: UIViewController {
         
         return view
     }()
-    
     
     let nmviewSmall: UIView = {
         let view = UIView()
@@ -44,10 +43,25 @@ class SighnInViewController: UIViewController {
         return label
     }()
     
-    let nmLoginTextfield: UITextField = {
+    let nmFullNameTextfield: UITextField = {
         let textfield = UITextField()
         textfield.translatesAutoresizingMaskIntoConstraints = false
-        textfield.placeholder = "Username"
+        textfield.placeholder = "Full Name"
+        return textfield
+    }()
+    
+    let nmEmailTextfield: UITextField = {
+        let textfield = UITextField()
+        textfield.translatesAutoresizingMaskIntoConstraints = false
+        textfield.placeholder = "Email"
+        return textfield
+    }()
+   
+    let nmPhoneTextfield: UITextField = {
+        let textfield = UITextField()
+        textfield.translatesAutoresizingMaskIntoConstraints = false
+        textfield.placeholder = "Phone"
+        textfield.keyboardType = UIKeyboardType.phonePad
         return textfield
     }()
     
@@ -58,11 +72,10 @@ class SighnInViewController: UIViewController {
         return textfield
     }()
     
-    
     let nmBluebutton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Sign In", for: UIControl.State.normal)
+        button.setTitle("Sign Up", for: UIControl.State.normal)
         button.setTitleColor(UIColor.black, for: UIControl.State.normal)
         button.layer.cornerRadius = 5
         button.backgroundColor = UIColor.systemBlue
@@ -72,16 +85,17 @@ class SighnInViewController: UIViewController {
     let nmQuestionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Don't have an account?"
+        label.text = "Allready have a account?"
         return label
     }()
     
     let nmSignUpButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Sign Up", for: .normal)
+        button.setTitle("Sign In", for: .normal)
         button.setTitleColor(UIColor.black, for: UIControl.State.normal)
         button.backgroundColor = UIColor.clear
+        button.addTarget(self, action: #selector(tappedSignIn), for: UIControl.Event.touchDown)
         return button
     }()
     
@@ -124,7 +138,9 @@ class SighnInViewController: UIViewController {
         self.nmviewSmall.addSubview(nmSmallStackView)
         
         nmBigStackView.addArrangedSubview(nmInstalabel)
-        nmBigStackView.addArrangedSubview(nmLoginTextfield)
+        nmBigStackView.addArrangedSubview(nmFullNameTextfield)
+        nmBigStackView.addArrangedSubview(nmEmailTextfield)
+        nmBigStackView.addArrangedSubview(nmPhoneTextfield)
         nmBigStackView.addArrangedSubview(nmPasswordTextfield)
         nmBigStackView.addArrangedSubview(nmBluebutton)
         
@@ -160,75 +176,45 @@ class SighnInViewController: UIViewController {
         nmviewSmall.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         nmviewSmall.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.125).isActive = true
         
-        
-
         nmviewShadow.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         nmviewShadow.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         nmviewShadow.heightAnchor.constraint(equalToConstant: 1).isActive = true
         nmviewShadow.bottomAnchor.constraint(equalTo: nmviewSmall.topAnchor).isActive = true
         
-        
         nmviewBig.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         nmviewBig.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         nmviewBig.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        
         nmviewBig.bottomAnchor.constraint(equalTo: nmviewShadow.topAnchor).isActive = true
-        
         
         nmBigStackView.leftAnchor.constraint(equalTo: nmviewBig.leftAnchor, constant: 20).isActive = true
         nmBigStackView.rightAnchor.constraint(equalTo: nmviewBig.rightAnchor, constant: -20).isActive = true
-        nmBigStackView.heightAnchor.constraint(equalTo: nmviewBig.heightAnchor, multiplier: 0.33).isActive = true
+        nmBigStackView.heightAnchor.constraint(equalTo: nmviewBig.heightAnchor, multiplier: 0.5).isActive = true
         nmBigStackView.centerYAnchor.constraint(equalTo: nmviewBig.centerYAnchor).isActive = true
         
-        UIStackView.joyla(stackview: nmBigStackView, views: [nmInstalabel, nmLoginTextfield,nmPasswordTextfield, nmBluebutton])
-        
+        UIStackView.joyla(stackview: nmBigStackView, views: [nmInstalabel,nmFullNameTextfield, nmEmailTextfield,nmPhoneTextfield,
+            nmPasswordTextfield,
+            nmBluebutton])
         
         nmSmallStackView.centerYAnchor.constraint(equalTo: nmviewSmall.centerYAnchor).isActive = true
         nmSmallStackView.centerXAnchor.constraint(equalTo: nmviewSmall.centerXAnchor).isActive = true
         nmSmallStackView.heightAnchor.constraint(equalTo: nmviewSmall.heightAnchor, multiplier: 0.2).isActive = true
-       
-        
-        
-        
-        
-        UIStackView.joyla(stackview: nmSmallStackView, views: [nmQuestionLabel,nmSignUpButton])
-        
-        
-        
+      
+        UIStackView.joyla(stackview: nmSmallStackView,
+                          views: [nmQuestionLabel,
+                                  nmSignUpButton])
+    }
+    
+    //MARK: objc Methods
+    
+    @objc func tappedSignIn() {
+        nmPasswordTextfield.text = ""
+        nmPhoneTextfield.text = ""
+        nmFullNameTextfield.text = ""
+        nmEmailTextfield.text = ""
+        dismiss(animated: true)
     }
     
 }
 
 
 
-
-extension UIStackView {
-    
-    class func joyla(stackview: UIStackView, views: [UIView]) {
-        if stackview.axis == .vertical {
-            for viiew in views {
-                viiew.leftAnchor.constraint(equalTo: stackview.leftAnchor).isActive = true
-                viiew.rightAnchor.constraint(equalTo: stackview.rightAnchor).isActive = true
-            }
-            
-        }else if stackview.axis == .horizontal {
-            for viiew in views {
-                viiew.topAnchor.constraint(equalTo: stackview.topAnchor).isActive = true
-                viiew.bottomAnchor.constraint(equalTo: stackview.bottomAnchor).isActive = true
-            }
-        }
-    }
-}
-
-
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-}

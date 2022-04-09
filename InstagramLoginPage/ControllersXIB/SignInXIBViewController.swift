@@ -9,21 +9,50 @@ import UIKit
 
 class SignInXIBViewController: UIViewController {
 
+    
+    @IBOutlet weak var bigViiew: UIView!
+    
+    @IBOutlet weak var smalView: UIView!
+    
+    @IBOutlet weak var nmbigStackview: UIStackView!
+    
+    @IBOutlet weak var smallStackView: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        startFunction()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+//MARK: Methods
+    
+    func startFunction() {
+        
+        hideKeyboardWhenTappedAround()
+        
+        bigViiew.translatesAutoresizingMaskIntoConstraints = false
+        smalView.translatesAutoresizingMaskIntoConstraints = false
+        nmbigStackview.translatesAutoresizingMaskIntoConstraints = false
+        smallStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        smalView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.08).isActive = true
+        
+        nmbigStackview.heightAnchor.constraint(equalTo: bigViiew.heightAnchor, multiplier: 0.333).isActive = true
+        
+        smallStackView.heightAnchor.constraint(equalTo: smalView.heightAnchor, multiplier: 0.333).isActive = true
+        
     }
-    */
-
+    
+    
+    //MARK: Actions
+    
+    @IBAction func nmSignInTapped(_ sender: UIButton) {
+        print(#function)
+    }
+    
+    @IBAction func nmSignUpTapped(_ sender: UIButton) {
+        present(SignUpXIBViewController(), animated: true)
+    }
+    
 }
