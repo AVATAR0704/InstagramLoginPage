@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomePagwViewController: UIViewController {
+class HomePagwViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
