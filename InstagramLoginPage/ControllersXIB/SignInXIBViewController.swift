@@ -51,7 +51,8 @@ class SignInXIBViewController: BaseViewController {
     @IBAction func nmSignInTapped(_ sender: UIButton) {
         
         
-        sceneDelegate().callHomePageXIB()
+        //sceneDelegate().callHomePageXIB()
+        extensceneDelegate().callHomePageXIB()
         print(#function)
     }
     

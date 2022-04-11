@@ -78,13 +78,13 @@
 		783F79B827FFE3E000C6959E /* InstagramLoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				783F79CE27FFE3FF00C6959E /* ControllersXIB */,
+				783F79CD27FFE3EF00C6959E /* ControllersCode */,
 				78A0345E2801391C00DBA604 /* objects */,
 				783F79B927FFE3E000C6959E /* AppDelegate.swift */,
 				783F79BB27FFE3E000C6959E /* SceneDelegate.swift */,
 				78A5C1632803EB4400DC5498 /* BaseViewController.swift */,
 				783F79C727FFE3E800C6959E /* Info.plist */,
-				783F79CD27FFE3EF00C6959E /* ControllersCode */,
-				783F79CE27FFE3FF00C6959E /* ControllersXIB */,
 				783F79CF27FFE41400C6959E /* AppUtils */,
 			);
 			path = InstagramLoginPage;

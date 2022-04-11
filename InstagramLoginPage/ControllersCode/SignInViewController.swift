@@ -294,3 +294,16 @@ extension UIViewController {
         
     }
 }
+
+
+
+extension UIViewController {
+    func extenappDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    func extensceneDelegate() -> SceneDelegate {
+    
+        return UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
+    }
+}
