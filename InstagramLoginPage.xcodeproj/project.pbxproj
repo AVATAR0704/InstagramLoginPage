@@ -19,7 +19,7 @@
 		789608A228009447000997B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789608A128009447000997B2 /* SignUpViewController.swift */; };
 		78A0345A2800A91300DBA604 /* SignUpXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A034582800A91300DBA604 /* SignUpXIBViewController.swift */; };
 		78A0345B2800A91300DBA604 /* SignUpXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A034592800A91300DBA604 /* SignUpXIBViewController.xib */; };
-		78A0345D280138AB00DBA604 /* HomePagwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345C280138AB00DBA604 /* HomePagwViewController.swift */; };
+		78A0345D280138AB00DBA604 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345C280138AB00DBA604 /* HomePageViewController.swift */; };
 		78A034602801393D00DBA604 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345F2801393D00DBA604 /* User.swift */; };
 		78A5C1642803EB4400DC5498 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C1632803EB4400DC5498 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,7 @@
 		789608A128009447000997B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		78A034582800A91300DBA604 /* SignUpXIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpXIBViewController.swift; sourceTree = "<group>"; };
 		78A034592800A91300DBA604 /* SignUpXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpXIBViewController.xib; sourceTree = "<group>"; };
-		78A0345C280138AB00DBA604 /* HomePagwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagwViewController.swift; sourceTree = "<group>"; };
+		78A0345C280138AB00DBA604 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		78A0345F2801393D00DBA604 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		78A5C1632803EB4400DC5498 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +91,7 @@
 				78A5C1632803EB4400DC5498 /* BaseViewController.swift */,
 				783F79D027FFE48000C6959E /* SignInViewController.swift */,
 				789608A128009447000997B2 /* SignUpViewController.swift */,
-				78A0345C280138AB00DBA604 /* HomePagwViewController.swift */,
+				78A0345C280138AB00DBA604 /* HomePageViewController.swift */,
 			);
 			path = ControllersCode;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 				783F79D127FFE48000C6959E /* SignInViewController.swift in Sources */,
 				78A034602801393D00DBA604 /* User.swift in Sources */,
 				783F79BA27FFE3E000C6959E /* AppDelegate.swift in Sources */,
-				78A0345D280138AB00DBA604 /* HomePagwViewController.swift in Sources */,
+				78A0345D280138AB00DBA604 /* HomePageViewController.swift in Sources */,
 				783F79BC27FFE3E000C6959E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
