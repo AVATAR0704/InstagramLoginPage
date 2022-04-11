@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func callHomeController() {
-        window?.rootViewController = UINavigationController(rootViewController: HomePagwViewController())
+        window?.rootViewController = UINavigationController(rootViewController: HomePageViewController())
         window?.makeKeyAndVisible()
     }
     

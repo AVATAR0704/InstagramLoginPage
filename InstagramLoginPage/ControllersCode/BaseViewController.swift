@@ -15,12 +15,12 @@ class BaseViewController: UIViewController {
     }
     
     func appDelegate() -> AppDelegate {
-        return AppDelegate()
+        return UIApplication.shared.delegate as! AppDelegate
     }
     
     func sceneDelegate() -> SceneDelegate {
     
-        return SceneDelegate()
+        return UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
     }
 
     
