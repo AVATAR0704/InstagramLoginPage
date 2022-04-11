@@ -293,11 +293,8 @@ extension UIViewController {
         view.endEditing(true)
         
     }
-}
-
-
-
-extension UIViewController {
+    
+    
     func extenappDelegate() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
@@ -307,3 +304,7 @@ extension UIViewController {
         return UIApplication.shared.connectedScenes.first!.delegate as! SceneDelegate
     }
 }
+
+
+
+

@@ -21,6 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         if isLogged {
            callHomePageXIB()
+           isLogged = true
         }else {
             callSignInXIBPage()
         }
