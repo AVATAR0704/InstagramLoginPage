@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpXIBViewController: UIViewController {
+class SignUpXIBViewController: BaseViewController {
 
     
     @IBOutlet weak var nmBigView: UIView!

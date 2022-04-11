@@ -245,7 +245,7 @@ class SignInViewController: BaseViewController {
             }
             
             if bool {
-                sceneDelegate().callHomeController()
+                sceneDelegate().callHomePage()()
                 nmErrorLabel.isHidden = true
             }else {
                 nmErrorLabel.isHidden = false

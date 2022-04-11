@@ -20,13 +20,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         if isLogged {
-            callHomeController()
+            callHomePage()
         }else {
             callSignInPage()
         }
     }
 
-    func callHomeController() {
+    func callHomePageXIB() {
+        window?.rootViewController = UINavigationController(rootViewController: HomeXIBViewController())
+    }
+    
+    
+    func callHomePage() {
         window?.rootViewController = UINavigationController(rootViewController: HomePageViewController())
         window?.makeKeyAndVisible()
     }

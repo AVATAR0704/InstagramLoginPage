@@ -22,6 +22,8 @@
 		78A0345D280138AB00DBA604 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345C280138AB00DBA604 /* HomePageViewController.swift */; };
 		78A034602801393D00DBA604 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345F2801393D00DBA604 /* User.swift */; };
 		78A5C1642803EB4400DC5498 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C1632803EB4400DC5498 /* BaseViewController.swift */; };
+		78A5C16B2804064400DC5498 /* HomeXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C1692804064400DC5498 /* HomeXIBViewController.swift */; };
+		78A5C16C2804064400DC5498 /* HomeXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A5C16A2804064400DC5498 /* HomeXIBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		78A0345C280138AB00DBA604 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		78A0345F2801393D00DBA604 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		78A5C1632803EB4400DC5498 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		78A5C1692804064400DC5498 /* HomeXIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeXIBViewController.swift; sourceTree = "<group>"; };
+		78A5C16A2804064400DC5498 /* HomeXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeXIBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 				78A0345E2801391C00DBA604 /* objects */,
 				783F79B927FFE3E000C6959E /* AppDelegate.swift */,
 				783F79BB27FFE3E000C6959E /* SceneDelegate.swift */,
+				78A5C1632803EB4400DC5498 /* BaseViewController.swift */,
 				783F79C727FFE3E800C6959E /* Info.plist */,
 				783F79CD27FFE3EF00C6959E /* ControllersCode */,
 				783F79CE27FFE3FF00C6959E /* ControllersXIB */,
@@ -88,7 +93,6 @@
 		783F79CD27FFE3EF00C6959E /* ControllersCode */ = {
 			isa = PBXGroup;
 			children = (
-				78A5C1632803EB4400DC5498 /* BaseViewController.swift */,
 				783F79D027FFE48000C6959E /* SignInViewController.swift */,
 				789608A128009447000997B2 /* SignUpViewController.swift */,
 				78A0345C280138AB00DBA604 /* HomePageViewController.swift */,
@@ -103,6 +107,8 @@
 				783F79D327FFEAEB00C6959E /* SignInXIBViewController.xib */,
 				78A034582800A91300DBA604 /* SignUpXIBViewController.swift */,
 				78A034592800A91300DBA604 /* SignUpXIBViewController.xib */,
+				78A5C1692804064400DC5498 /* HomeXIBViewController.swift */,
+				78A5C16A2804064400DC5498 /* HomeXIBViewController.xib */,
 			);
 			path = ControllersXIB;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 				783F79D527FFEAEB00C6959E /* SignInXIBViewController.xib in Resources */,
 				78A0345B2800A91300DBA604 /* SignUpXIBViewController.xib in Resources */,
 				783F79C127FFE3E000C6959E /* Main.storyboard in Resources */,
+				78A5C16C2804064400DC5498 /* HomeXIBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +216,7 @@
 				783F79BA27FFE3E000C6959E /* AppDelegate.swift in Sources */,
 				78A0345D280138AB00DBA604 /* HomePageViewController.swift in Sources */,
 				783F79BC27FFE3E000C6959E /* SceneDelegate.swift in Sources */,
+				78A5C16B2804064400DC5498 /* HomeXIBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
