@@ -21,6 +21,7 @@
 		78A0345B2800A91300DBA604 /* SignUpXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A034592800A91300DBA604 /* SignUpXIBViewController.xib */; };
 		78A0345D280138AB00DBA604 /* HomePagwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345C280138AB00DBA604 /* HomePagwViewController.swift */; };
 		78A034602801393D00DBA604 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A0345F2801393D00DBA604 /* User.swift */; };
+		78A5C1642803EB4400DC5498 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A5C1632803EB4400DC5498 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		78A034592800A91300DBA604 /* SignUpXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpXIBViewController.xib; sourceTree = "<group>"; };
 		78A0345C280138AB00DBA604 /* HomePagwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagwViewController.swift; sourceTree = "<group>"; };
 		78A0345F2801393D00DBA604 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		78A5C1632803EB4400DC5498 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		783F79CD27FFE3EF00C6959E /* ControllersCode */ = {
 			isa = PBXGroup;
 			children = (
+				78A5C1632803EB4400DC5498 /* BaseViewController.swift */,
 				783F79D027FFE48000C6959E /* SignInViewController.swift */,
 				789608A128009447000997B2 /* SignUpViewController.swift */,
 				78A0345C280138AB00DBA604 /* HomePagwViewController.swift */,
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A5C1642803EB4400DC5498 /* BaseViewController.swift in Sources */,
 				789608A228009447000997B2 /* SignUpViewController.swift in Sources */,
 				783F79BE27FFE3E000C6959E /* ViewController.swift in Sources */,
 				783F79D427FFEAEB00C6959E /* SignInXIBViewController.swift in Sources */,
