@@ -245,7 +245,7 @@ class SignInViewController: BaseViewController {
             }
             
             if bool {
-              present(UINavigationController(rootViewController: HomePagwViewController()), animated: true)
+                sceneDelegate().callHomeController()
                 nmErrorLabel.isHidden = true
             }else {
                 nmErrorLabel.isHidden = false
