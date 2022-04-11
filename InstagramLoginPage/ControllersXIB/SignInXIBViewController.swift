@@ -10,6 +10,7 @@ import UIKit
 class SignInXIBViewController: BaseViewController {
 
     
+    
     @IBOutlet weak var bigViiew: UIView!
     
     @IBOutlet weak var smalView: UIView!
@@ -48,6 +49,9 @@ class SignInXIBViewController: BaseViewController {
     //MARK: Actions
     
     @IBAction func nmSignInTapped(_ sender: UIButton) {
+        
+        
+        sceneDelegate().callHomePageXIB()
         print(#function)
     }
     
